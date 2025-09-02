@@ -99,24 +99,24 @@
 <label><input name="academic_level" type="radio" value="fifth"/> Fifth year</label>
 <label><input name="academic_level" type="radio" value="intern"/> Medical intern</label>
 <label><input name="academic_level" type="radio" value="other"/> Other (please specify)</label>
-<input name="academic_level_other" placeholder="If other, please specify" required="" type="text"/>
+<input name="academic_level_other" placeholder="If other, please specify" type="text"/>
 <label>Academic phase</label>
 <label><input name="academic_phase" required="" type="radio" value="academic"/> Academic</label>
 <label><input name="academic_phase" type="radio" value="clinical"/> Clinical</label>
 <label><input name="academic_phase" type="radio" value="intern"/> Intern</label>
 <label><input name="academic_phase" type="radio" value="other"/> Other (please specify)</label>
-<input name="academic_phase_other" placeholder="If other, please specify" required="" type="text"/>
+<input name="academic_phase_other" placeholder="If other, please specify" type="text"/>
 <label>Are you a medical student or intern?</label>
 <label><input name="med_student" required="" type="radio" value="yes"/> Yes</label>
 <label><input name="med_student" type="radio" value="no"/> No</label>
 <label>What is the country you were born in?</label>
 <label><input name="country_birth" required="" type="radio" value="iraq"/> Iraq</label>
 <label><input name="country_birth" type="radio" value="other"/> Other (please specify)</label>
-<input name="country_birth_other" placeholder="If other, please specify" required="" type="text"/>
+<input name="country_birth_other" placeholder="If other, please specify" type="text"/>
 <label>What is the country you are studying medicine in?</label>
 <label><input name="country_study" required="" type="radio" value="iraq"/> Iraq</label>
 <label><input name="country_study" type="radio" value="other"/> Other (please specify)</label>
-<input name="country_study_other" placeholder="If other, please specify" required="" type="text"/>
+<input name="country_study_other" placeholder="If other, please specify" type="text"/>
 <label>BMI category</label>
 <label><input name="bmi" required="" type="radio" value="underweight"/> Underweight (&lt; 18.5)</label>
 <label><input name="bmi" type="radio" value="normal"/> Normal (18.5–24.9)</label>
@@ -158,20 +158,20 @@
 <label><input name="analgesics" type="radio" value="both"/> Both of them</label>
 <label><input name="analgesics" type="radio" value="none"/> None of them</label>
 <label>Preferred drinks (check all that apply)</label>
-<label><input name="drink_coffee" required="" type="checkbox"/> Coffee</label>
-<label><input name="drink_soft" required="" type="checkbox"/> Soft drinks</label>
-<label><input name="drink_tea" required="" type="checkbox"/> Tea</label>
-<label><input name="drink_energy" required="" type="checkbox"/> Energy drinks</label>
+<label><input name="drink_coffee" type="checkbox"/> Coffee</label>
+<label><input name="drink_soft" type="checkbox"/> Soft drinks</label>
+<label><input name="drink_tea" type="checkbox"/> Tea</label>
+<label><input name="drink_energy" type="checkbox"/> Energy drinks</label>
 <label>Most preferred food (check all that apply)</label>
-<label><input name="food_fast" required="" type="checkbox"/> Fast and fried food</label>
-<label><input name="food_spicy" required="" type="checkbox"/> Spicy food</label>
-<label><input name="food_sweet" required="" type="checkbox"/> Sweet &amp; sugar food (chocolate)</label>
-<label><input name="food_fiber" required="" type="checkbox"/> Fiber‑rich food</label>
+<label><input name="food_fast" type="checkbox"/> Fast and fried food</label>
+<label><input name="food_spicy" type="checkbox"/> Spicy food</label>
+<label><input name="food_sweet" type="checkbox"/> Sweet &amp; sugar food (chocolate)</label>
+<label><input name="food_fiber" type="checkbox"/> Fiber‑rich food</label>
 <label>Are you currently taking any medications?</label>
 <label><input name="meds" required="" type="radio" value="yes"/> Yes</label>
 <label><input name="meds" type="radio" value="no"/> No</label>
 <label>If yes, what are they?</label>
-<input name="meds_details" placeholder="List your current medications" required="" type="text"/>
+<input name="meds_details" placeholder="List your current medications" type="text"/>
 <label>Do you usually eat dinner one or two hours before sleep?</label>
 <label><input name="eat_before_sleep" required="" type="radio" value="yes"/> Yes</label>
 <label><input name="eat_before_sleep" type="radio" value="no"/> No</label>
@@ -716,5 +716,35 @@
 <!-- Submission -->
 <input type="submit" value="Submit"/>
 </form>
+
+<!-- Conditional field requirements: toggle "Other" and "Yes" text inputs only when triggered by radio selection -->
+<script>
+  // Helper function to bind conditional required/disabled states
+  function bindConditional(radioName, triggerValue, textName) {
+    const radios = Array.from(document.querySelectorAll(`input[name="${radioName}"]`));
+    const trigger = document.querySelector(`input[name="${radioName}"][value="${triggerValue}"]`);
+    const text = document.querySelector(`input[name="${textName}"]`);
+    if (!radios.length || !trigger || !text) return;
+    // Update the text field state based on whether the trigger radio is selected
+    function update() {
+      const isOn = trigger.checked;
+      text.disabled = !isOn;
+      text.required = isOn;
+      if (!isOn) {
+        text.value = "";
+      }
+    }
+    // Attach change event to all radios in the group
+    radios.forEach(r => r.addEventListener("change", update));
+    // Initialize state on load
+    update();
+  }
+  // Bind groups: only require text when the specific value is selected
+  bindConditional("academic_level", "other", "academic_level_other");
+  bindConditional("academic_phase", "other", "academic_phase_other");
+  bindConditional("country_birth", "other", "country_birth_other");
+  bindConditional("country_study", "other", "country_study_other");
+  bindConditional("meds", "yes", "meds_details");
+</script>
 </body>
 </html>
