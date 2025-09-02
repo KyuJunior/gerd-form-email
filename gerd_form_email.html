@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GERD Study Survey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.4;
+    }
+    h1 {
+      text-align: center;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    select, input[type="text"], input[type="number"], textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 6px;
+      margin-top: 4px;
+    }
+    .grid-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .grid-table th, .grid-table td {
+      border: 1px solid #ddd;
+      padding: 4px;
+      text-align: center;
+    }
+    .grid-table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Prevalence of GERD Study Survey</h1>
+  <!-- This form will send responses to yaser_aeh@yahoo.com via Formsubmit -->
+  <form action="https://formsubmit.co/yaser_aeh@yahoo.com" method="POST">
+    <!-- Sociodemographic and Lifestyle Section -->
+    <fieldset>
+      <legend>1. Sociodemographic and Lifestyle</legend>
+      <label>Age
+        <select name="age">
+          <option value="">Select age</option>
+          <!-- Ages 18–40+ -->
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40+</option>
+        </select>
+      </label>
+      <label>Gender</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label>Residency</label>
+      <label><input type="radio" name="residency" value="urban"> Urban</label>
+      <label><input type="radio" name="residency" value="rural"> Rural</label>
+      <label>Academic level</label>
+      <label><input type="radio" name="academic_level" value="first"> First year</label>
+      <label><input type="radio" name="academic_level" value="second"> Second year</label>
+      <label><input type="radio" name="academic_level" value="third"> Third year</label>
+      <label><input type="radio" name="academic_level" value="fourth"> Fourth year</label>
+      <label><input type="radio" name="academic_level" value="fifth"> Fifth year</label>
+      <label><input type="radio" name="academic_level" value="intern"> Medical intern</label>
+      <label><input type="radio" name="academic_level" value="other"> Other (please specify)</label>
+      <input type="text" name="academic_level_other" placeholder="If other, please specify">
+      <label>Academic phase</label>
+      <label><input type="radio" name="academic_phase" value="academic"> Academic</label>
+      <label><input type="radio" name="academic_phase" value="clinical"> Clinical</label>
+      <label><input type="radio" name="academic_phase" value="intern"> Intern</label>
+      <label><input type="radio" name="academic_phase" value="other"> Other (please specify)</label>
+      <input type="text" name="academic_phase_other" placeholder="If other, please specify">
+      <label>Are you a medical student or intern?</label>
+      <label><input type="radio" name="med_student" value="yes"> Yes</label>
+      <label><input type="radio" name="med_student" value="no"> No</label>
+      <label>What is the country you were born in?</label>
+      <label><input type="radio" name="country_birth" value="iraq"> Iraq</label>
+      <label><input type="radio" name="country_birth" value="other"> Other (please specify)</label>
+      <input type="text" name="country_birth_other" placeholder="If other, please specify">
+      <label>What is the country you are studying medicine in?</label>
+      <label><input type="radio" name="country_study" value="iraq"> Iraq</label>
+      <label><input type="radio" name="country_study" value="other"> Other (please specify)</label>
+      <input type="text" name="country_study_other" placeholder="If other, please specify">
+      <label>BMI category</label>
+      <label><input type="radio" name="bmi" value="underweight"> Underweight (&lt; 18.5)</label>
+      <label><input type="radio" name="bmi" value="normal"> Normal (18.5–24.9)</label>
+      <label><input type="radio" name="bmi" value="overweight"> Overweight (25–29.9)</label>
+      <label><input type="radio" name="bmi" value="obese1"> Obese grade 1 (30–34.9)</label>
+      <label><input type="radio" name="bmi" value="obese2"> Obese grade 2 (35–39.9)</label>
+      <label><input type="radio" name="bmi" value="obese3"> Obese grade 3 (&gt; 40)</label>
+      <label>Current smoking status</label>
+      <label><input type="radio" name="smoking" value="smoker"> Smoker</label>
+      <label><input type="radio" name="smoking" value="ex_smoker"> Ex‑smoker</label>
+      <label><input type="radio" name="smoking" value="non_smoker"> Non‑smoker</label>
+      <label>Are you satisfied with your academic performance?</label>
+      <label><input type="radio" name="academic_satisfaction" value="yes"> Yes</label>
+      <label><input type="radio" name="academic_satisfaction" value="no"> No</label>
+      <label><input type="radio" name="academic_satisfaction" value="not_sure"> Not sure</label>
+      <label>Are you satisfied with your social life?</label>
+      <label><input type="radio" name="social_satisfaction" value="yes"> Yes</label>
+      <label><input type="radio" name="social_satisfaction" value="no"> No</label>
+      <label><input type="radio" name="social_satisfaction" value="not_sure"> Not sure</label>
+      <label>Current living condition</label>
+      <label><input type="radio" name="living_condition" value="family"> Living with family</label>
+      <label><input type="radio" name="living_condition" value="friends"> Living with friends</label>
+      <label><input type="radio" name="living_condition" value="alone"> Living alone</label>
+      <label>Marital status</label>
+      <label><input type="radio" name="marital_status" value="single"> Single</label>
+      <label><input type="radio" name="marital_status" value="married"> Married</label>
+      <label><input type="radio" name="marital_status" value="divorced"> Divorced</label>
+      <label><input type="radio" name="marital_status" value="widowed"> Widowed</label>
+      <label>Previous diagnosis of GERD?</label>
+      <label><input type="radio" name="prior_gerd" value="yes"> Yes</label>
+      <label><input type="radio" name="prior_gerd" value="no"> No</label>
+      <label>First‑degree family history of GERD?</label>
+      <label><input type="radio" name="fam_history" value="yes"> Yes</label>
+      <label><input type="radio" name="fam_history" value="no"> No</label>
+      <label><input type="radio" name="fam_history" value="not_sure"> Not sure</label>
+      <label>Type of analgesics you usually use</label>
+      <label><input type="radio" name="analgesics" value="nsaid"> NSAID</label>
+      <label><input type="radio" name="analgesics" value="paracetamol"> Paracetamol</label>
+      <label><input type="radio" name="analgesics" value="both"> Both of them</label>
+      <label><input type="radio" name="analgesics" value="none"> None of them</label>
+      <label>Preferred drinks (check all that apply)</label>
+      <label><input type="checkbox" name="drink_coffee"> Coffee</label>
+      <label><input type="checkbox" name="drink_soft"> Soft drinks</label>
+      <label><input type="checkbox" name="drink_tea"> Tea</label>
+      <label><input type="checkbox" name="drink_energy"> Energy drinks</label>
+      <label>Most preferred food (check all that apply)</label>
+      <label><input type="checkbox" name="food_fast"> Fast and fried food</label>
+      <label><input type="checkbox" name="food_spicy"> Spicy food</label>
+      <label><input type="checkbox" name="food_sweet"> Sweet &amp; sugar food (chocolate)</label>
+      <label><input type="checkbox" name="food_fiber"> Fiber‑rich food</label>
+      <label>Are you currently taking any medications?</label>
+      <label><input type="radio" name="meds" value="yes"> Yes</label>
+      <label><input type="radio" name="meds" value="no"> No</label>
+      <label>If yes, what are they?</label>
+      <input type="text" name="meds_details" placeholder="List your current medications">
+      <label>Do you usually eat dinner one or two hours before sleep?</label>
+      <label><input type="radio" name="eat_before_sleep" value="yes"> Yes</label>
+      <label><input type="radio" name="eat_before_sleep" value="no"> No</label>
+      <label>Do you usually eat meals at night?</label>
+      <label><input type="radio" name="eat_at_night" value="yes"> Yes</label>
+      <label><input type="radio" name="eat_at_night" value="no"> No</label>
+    </fieldset>
+
+    <!-- GerdQ Symptom Frequency Section -->
+    <fieldset>
+      <legend>2. GerdQ Symptom Frequency</legend>
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <th>Symptom</th>
+            <th>Days 0</th>
+            <th>Days 1</th>
+            <th>Days 2–3</th>
+            <th>Days 4–7</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Burning feeling behind the breastbone (heartburn)</td>
+            <td><input type="radio" name="qburn" value="0"></td>
+            <td><input type="radio" name="qburn" value="1"></td>
+            <td><input type="radio" name="qburn" value="2-3"></td>
+            <td><input type="radio" name="qburn" value="4-7"></td>
+          </tr>
+          <tr>
+            <td>Regurgitation of bitter or sour fluid into the chest or mouth</td>
+            <td><input type="radio" name="qregurg" value="0"></td>
+            <td><input type="radio" name="qregurg" value="1"></td>
+            <td><input type="radio" name="qregurg" value="2-3"></td>
+            <td><input type="radio" name="qregurg" value="4-7"></td>
+          </tr>
+          <tr>
+            <td>Pain in the middle of the upper stomach area</td>
+            <td><input type="radio" name="qpain" value="0"></td>
+            <td><input type="radio" name="qpain" value="1"></td>
+            <td><input type="radio" name="qpain" value="2-3"></td>
+            <td><input type="radio" name="qpain" value="4-7"></td>
+          </tr>
+          <tr>
+            <td>Nausea</td>
+            <td><input type="radio" name="qnausea" value="0"></td>
+            <td><input type="radio" name="qnausea" value="1"></td>
+            <td><input type="radio" name="qnausea" value="2-3"></td>
+            <td><input type="radio" name="qnausea" value="4-7"></td>
+          </tr>
+          <tr>
+            <td>Trouble getting a good night’s sleep because of heartburn or regurgitation</td>
+            <td><input type="radio" name="qsleep" value="0"></td>
+            <td><input type="radio" name="qsleep" value="1"></td>
+            <td><input type="radio" name="qsleep" value="2-3"></td>
+            <td><input type="radio" name="qsleep" value="4-7"></td>
+          </tr>
+          <tr>
+            <td>Need for over‑the‑counter medication in addition to prescribed medication</td>
+            <td><input type="radio" name="qmeds" value="0"></td>
+            <td><input type="radio" name="qmeds" value="1"></td>
+            <td><input type="radio" name="qmeds" value="2-3"></td>
+            <td><input type="radio" name="qmeds" value="4-7"></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <!-- GERD-HRQL Section -->
+    <fieldset>
+      <legend>3. GERD‑HRQL</legend>
+      <p>Please rate the severity of the following using the scale: 0 (no symptoms), 1 (noticeable but not bothersome), 2 (noticeable and bothersome but not every day), 3 (bothersome every day), 4 (affects daily life), 5 (incapacitating).</p>
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>How bad is the heartburn?</td>
+            <td><input type="radio" name="hrql1" value="0"></td>
+            <td><input type="radio" name="hrql1" value="1"></td>
+            <td><input type="radio" name="hrql1" value="2"></td>
+            <td><input type="radio" name="hrql1" value="3"></td>
+            <td><input type="radio" name="hrql1" value="4"></td>
+            <td><input type="radio" name="hrql1" value="5"></td>
+          </tr>
+          <tr>
+            <td>Heartburn when lying down?</td>
+            <td><input type="radio" name="hrql2" value="0"></td>
+            <td><input type="radio" name="hrql2" value="1"></td>
+            <td><input type="radio" name="hrql2" value="2"></td>
+            <td><input type="radio" name="hrql2" value="3"></td>
+            <td><input type="radio" name="hrql2" value="4"></td>
+            <td><input type="radio" name="hrql2" value="5"></td>
+          </tr>
+          <tr>
+            <td>Heartburn when standing up?</td>
+            <td><input type="radio" name="hrql3" value="0"></td>
+            <td><input type="radio" name="hrql3" value="1"></td>
+            <td><input type="radio" name="hrql3" value="2"></td>
+            <td><input type="radio" name="hrql3" value="3"></td>
+            <td><input type="radio" name="hrql3" value="4"></td>
+            <td><input type="radio" name="hrql3" value="5"></td>
+          </tr>
+          <tr>
+            <td>Heartburn after meals?</td>
+            <td><input type="radio" name="hrql4" value="0"></td>
+            <td><input type="radio" name="hrql4" value="1"></td>
+            <td><input type="radio" name="hrql4" value="2"></td>
+            <td><input type="radio" name="hrql4" value="3"></td>
+            <td><input type="radio" name="hrql4" value="4"></td>
+            <td><input type="radio" name="hrql4" value="5"></td>
+          </tr>
+          <tr>
+            <td>Does heartburn change your diet?</td>
+            <td><input type="radio" name="hrql5" value="0"></td>
+            <td><input type="radio" name="hrql5" value="1"></td>
+            <td><input type="radio" name="hrql5" value="2"></td>
+            <td><input type="radio" name="hrql5" value="3"></td>
+            <td><input type="radio" name="hrql5" value="4"></td>
+            <td><input type="radio" name="hrql5" value="5"></td>
+          </tr>
+          <tr>
+            <td>Does heartburn wake you from sleep?</td>
+            <td><input type="radio" name="hrql6" value="0"></td>
+            <td><input type="radio" name="hrql6" value="1"></td>
+            <td><input type="radio" name="hrql6" value="2"></td>
+            <td><input type="radio" name="hrql6" value="3"></td>
+            <td><input type="radio" name="hrql6" value="4"></td>
+            <td><input type="radio" name="hrql6" value="5"></td>
+          </tr>
+          <tr>
+            <td>Do you have difficulty swallowing?</td>
+            <td><input type="radio" name="hrql7" value="0"></td>
+            <td><input type="radio" name="hrql7" value="1"></td>
+            <td><input type="radio" name="hrql7" value="2"></td>
+            <td><input type="radio" name="hrql7" value="3"></td>
+            <td><input type="radio" name="hrql7" value="4"></td>
+            <td><input type="radio" name="hrql7" value="5"></td>
+          </tr>
+          <tr>
+            <td>Do you have pain with swallowing?</td>
+            <td><input type="radio" name="hrql8" value="0"></td>
+            <td><input type="radio" name="hrql8" value="1"></td>
+            <td><input type="radio" name="hrql8" value="2"></td>
+            <td><input type="radio" name="hrql8" value="3"></td>
+            <td><input type="radio" name="hrql8" value="4"></td>
+            <td><input type="radio" name="hrql8" value="5"></td>
+          </tr>
+          <tr>
+            <td>If you take medicines, does this affect your daily life?</td>
+            <td><input type="radio" name="hrql9" value="0"></td>
+            <td><input type="radio" name="hrql9" value="1"></td>
+            <td><input type="radio" name="hrql9" value="2"></td>
+            <td><input type="radio" name="hrql9" value="3"></td>
+            <td><input type="radio" name="hrql9" value="4"></td>
+            <td><input type="radio" name="hrql9" value="5"></td>
+          </tr>
+          <tr>
+            <td>How bad is the regurgitation?</td>
+            <td><input type="radio" name="hrql10" value="0"></td>
+            <td><input type="radio" name="hrql10" value="1"></td>
+            <td><input type="radio" name="hrql10" value="2"></td>
+            <td><input type="radio" name="hrql10" value="3"></td>
+            <td><input type="radio" name="hrql10" value="4"></td>
+            <td><input type="radio" name="hrql10" value="5"></td>
+          </tr>
+          <tr>
+            <td>Regurgitation when lying down?</td>
+            <td><input type="radio" name="hrql11" value="0"></td>
+            <td><input type="radio" name="hrql11" value="1"></td>
+            <td><input type="radio" name="hrql11" value="2"></td>
+            <td><input type="radio" name="hrql11" value="3"></td>
+            <td><input type="radio" name="hrql11" value="4"></td>
+            <td><input type="radio" name="hrql11" value="5"></td>
+          </tr>
+          <tr>
+            <td>Regurgitation when standing up?</td>
+            <td><input type="radio" name="hrql12" value="0"></td>
+            <td><input type="radio" name="hrql12" value="1"></td>
+            <td><input type="radio" name="hrql12" value="2"></td>
+            <td><input type="radio" name="hrql12" value="3"></td>
+            <td><input type="radio" name="hrql12" value="4"></td>
+            <td><input type="radio" name="hrql12" value="5"></td>
+          </tr>
+          <tr>
+            <td>Regurgitation after meals?</td>
+            <td><input type="radio" name="hrql13" value="0"></td>
+            <td><input type="radio" name="hrql13" value="1"></td>
+            <td><input type="radio" name="hrql13" value="2"></td>
+            <td><input type="radio" name="hrql13" value="3"></td>
+            <td><input type="radio" name="hrql13" value="4"></td>
+            <td><input type="radio" name="hrql13" value="5"></td>
+          </tr>
+          <tr>
+            <td>Does regurgitation change your diet?</td>
+            <td><input type="radio" name="hrql14" value="0"></td>
+            <td><input type="radio" name="hrql14" value="1"></td>
+            <td><input type="radio" name="hrql14" value="2"></td>
+            <td><input type="radio" name="hrql14" value="3"></td>
+            <td><input type="radio" name="hrql14" value="4"></td>
+            <td><input type="radio" name="hrql14" value="5"></td>
+          </tr>
+          <tr>
+            <td>Does regurgitation wake you from sleep?</td>
+            <td><input type="radio" name="hrql15" value="0"></td>
+            <td><input type="radio" name="hrql15" value="1"></td>
+            <td><input type="radio" name="hrql15" value="2"></td>
+            <td><input type="radio" name="hrql15" value="3"></td>
+            <td><input type="radio" name="hrql15" value="4"></td>
+            <td><input type="radio" name="hrql15" value="5"></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>How satisfied are you with your present condition?</p>
+      <label><input type="radio" name="hrql_satisfaction" value="satisfied"> Satisfied</label>
+      <label><input type="radio" name="hrql_satisfaction" value="neutral"> Neutral</label>
+      <label><input type="radio" name="hrql_satisfaction" value="dissatisfied"> Dissatisfied</label>
+    </fieldset>
+
+    <!-- Dutch Eating Behavior Questionnaire -->
+    <fieldset>
+      <legend>4. Dutch Eating Behavior Questionnaire</legend>
+      <p>For each statement, choose: Very often, Often, Sometimes, Seldom, or Never.</p>
+      <h3>Restrained eating items</h3>
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <th>Statement</th>
+            <th>Very often</th>
+            <th>Often</th>
+            <th>Sometimes</th>
+            <th>Seldom</th>
+            <th>Never</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 10 restrained items -->
+          <tr>
+            <td>If you have put on weight, do you eat less than you usually do?</td>
+            <td><input type="radio" name="restrain1" value="very_often"></td>
+            <td><input type="radio" name="restrain1" value="often"></td>
+            <td><input type="radio" name="restrain1" value="sometimes"></td>
+            <td><input type="radio" name="restrain1" value="seldom"></td>
+            <td><input type="radio" name="restrain1" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you try to eat less at mealtimes than you would like to eat?</td>
+            <td><input type="radio" name="restrain2" value="very_often"></td>
+            <td><input type="radio" name="restrain2" value="often"></td>
+            <td><input type="radio" name="restrain2" value="sometimes"></td>
+            <td><input type="radio" name="restrain2" value="seldom"></td>
+            <td><input type="radio" name="restrain2" value="never"></td>
+          </tr>
+          <tr>
+            <td>How often do you refuse food or drink offered because you are concerned about your weight?</td>
+            <td><input type="radio" name="restrain3" value="very_often"></td>
+            <td><input type="radio" name="restrain3" value="often"></td>
+            <td><input type="radio" name="restrain3" value="sometimes"></td>
+            <td><input type="radio" name="restrain3" value="seldom"></td>
+            <td><input type="radio" name="restrain3" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you watch exactly what you eat?</td>
+            <td><input type="radio" name="restrain4" value="very_often"></td>
+            <td><input type="radio" name="restrain4" value="often"></td>
+            <td><input type="radio" name="restrain4" value="sometimes"></td>
+            <td><input type="radio" name="restrain4" value="seldom"></td>
+            <td><input type="radio" name="restrain4" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you deliberately eat foods that are slimming?</td>
+            <td><input type="radio" name="restrain5" value="very_often"></td>
+            <td><input type="radio" name="restrain5" value="often"></td>
+            <td><input type="radio" name="restrain5" value="sometimes"></td>
+            <td><input type="radio" name="restrain5" value="seldom"></td>
+            <td><input type="radio" name="restrain5" value="never"></td>
+          </tr>
+          <tr>
+            <td>When you have eaten too much, do you eat less than usual the following days?</td>
+            <td><input type="radio" name="restrain6" value="very_often"></td>
+            <td><input type="radio" name="restrain6" value="often"></td>
+            <td><input type="radio" name="restrain6" value="sometimes"></td>
+            <td><input type="radio" name="restrain6" value="seldom"></td>
+            <td><input type="radio" name="restrain6" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you deliberately eat less in order not to become heavy?</td>
+            <td><input type="radio" name="restrain7" value="very_often"></td>
+            <td><input type="radio" name="restrain7" value="often"></td>
+            <td><input type="radio" name="restrain7" value="sometimes"></td>
+            <td><input type="radio" name="restrain7" value="seldom"></td>
+            <td><input type="radio" name="restrain7" value="never"></td>
+          </tr>
+          <tr>
+            <td>How often do you try not to eat between meals because you are watching your weight?</td>
+            <td><input type="radio" name="restrain8" value="very_often"></td>
+            <td><input type="radio" name="restrain8" value="often"></td>
+            <td><input type="radio" name="restrain8" value="sometimes"></td>
+            <td><input type="radio" name="restrain8" value="seldom"></td>
+            <td><input type="radio" name="restrain8" value="never"></td>
+          </tr>
+          <tr>
+            <td>How often in the evening do you try not to eat because you are watching your weight?</td>
+            <td><input type="radio" name="restrain9" value="very_often"></td>
+            <td><input type="radio" name="restrain9" value="often"></td>
+            <td><input type="radio" name="restrain9" value="sometimes"></td>
+            <td><input type="radio" name="restrain9" value="seldom"></td>
+            <td><input type="radio" name="restrain9" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you take into account your weight with what you eat?</td>
+            <td><input type="radio" name="restrain10" value="very_often"></td>
+            <td><input type="radio" name="restrain10" value="often"></td>
+            <td><input type="radio" name="restrain10" value="sometimes"></td>
+            <td><input type="radio" name="restrain10" value="seldom"></td>
+            <td><input type="radio" name="restrain10" value="never"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Emotional eating items</h3>
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <th>Statement</th>
+            <th>Very often</th>
+            <th>Often</th>
+            <th>Sometimes</th>
+            <th>Seldom</th>
+            <th>Never</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Emotional eating statements -->
+          <tr>
+            <td>Do you have the desire to eat when you are irritated?</td>
+            <td><input type="radio" name="emotional1" value="very_often"></td>
+            <td><input type="radio" name="emotional1" value="often"></td>
+            <td><input type="radio" name="emotional1" value="sometimes"></td>
+            <td><input type="radio" name="emotional1" value="seldom"></td>
+            <td><input type="radio" name="emotional1" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you have nothing to do?</td>
+            <td><input type="radio" name="emotional2" value="very_often"></td>
+            <td><input type="radio" name="emotional2" value="often"></td>
+            <td><input type="radio" name="emotional2" value="sometimes"></td>
+            <td><input type="radio" name="emotional2" value="seldom"></td>
+            <td><input type="radio" name="emotional2" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are depressed or discouraged?</td>
+            <td><input type="radio" name="emotional3" value="very_often"></td>
+            <td><input type="radio" name="emotional3" value="often"></td>
+            <td><input type="radio" name="emotional3" value="sometimes"></td>
+            <td><input type="radio" name="emotional3" value="seldom"></td>
+            <td><input type="radio" name="emotional3" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are feeling lonely?</td>
+            <td><input type="radio" name="emotional4" value="very_often"></td>
+            <td><input type="radio" name="emotional4" value="often"></td>
+            <td><input type="radio" name="emotional4" value="sometimes"></td>
+            <td><input type="radio" name="emotional4" value="seldom"></td>
+            <td><input type="radio" name="emotional4" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when someone disappoints you or hurts your feelings?</td>
+            <td><input type="radio" name="emotional5" value="very_often"></td>
+            <td><input type="radio" name="emotional5" value="often"></td>
+            <td><input type="radio" name="emotional5" value="sometimes"></td>
+            <td><input type="radio" name="emotional5" value="seldom"></td>
+            <td><input type="radio" name="emotional5" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are angry, irritated or annoyed?</td>
+            <td><input type="radio" name="emotional6" value="very_often"></td>
+            <td><input type="radio" name="emotional6" value="often"></td>
+            <td><input type="radio" name="emotional6" value="sometimes"></td>
+            <td><input type="radio" name="emotional6" value="seldom"></td>
+            <td><input type="radio" name="emotional6" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are approaching something unpleasant to happen?</td>
+            <td><input type="radio" name="emotional7" value="very_often"></td>
+            <td><input type="radio" name="emotional7" value="often"></td>
+            <td><input type="radio" name="emotional7" value="sometimes"></td>
+            <td><input type="radio" name="emotional7" value="seldom"></td>
+            <td><input type="radio" name="emotional7" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you get the desire to eat when you are anxious, worried or tense?</td>
+            <td><input type="radio" name="emotional8" value="very_often"></td>
+            <td><input type="radio" name="emotional8" value="often"></td>
+            <td><input type="radio" name="emotional8" value="sometimes"></td>
+            <td><input type="radio" name="emotional8" value="seldom"></td>
+            <td><input type="radio" name="emotional8" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when things are going against you or when things have gone wrong?</td>
+            <td><input type="radio" name="emotional9" value="very_often"></td>
+            <td><input type="radio" name="emotional9" value="often"></td>
+            <td><input type="radio" name="emotional9" value="sometimes"></td>
+            <td><input type="radio" name="emotional9" value="seldom"></td>
+            <td><input type="radio" name="emotional9" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are frightened?</td>
+            <td><input type="radio" name="emotional10" value="very_often"></td>
+            <td><input type="radio" name="emotional10" value="often"></td>
+            <td><input type="radio" name="emotional10" value="sometimes"></td>
+            <td><input type="radio" name="emotional10" value="seldom"></td>
+            <td><input type="radio" name="emotional10" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are disappointed?</td>
+            <td><input type="radio" name="emotional11" value="very_often"></td>
+            <td><input type="radio" name="emotional11" value="often"></td>
+            <td><input type="radio" name="emotional11" value="sometimes"></td>
+            <td><input type="radio" name="emotional11" value="seldom"></td>
+            <td><input type="radio" name="emotional11" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are emotionally upset?</td>
+            <td><input type="radio" name="emotional12" value="very_often"></td>
+            <td><input type="radio" name="emotional12" value="often"></td>
+            <td><input type="radio" name="emotional12" value="sometimes"></td>
+            <td><input type="radio" name="emotional12" value="seldom"></td>
+            <td><input type="radio" name="emotional12" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you have a desire to eat when you are bored or restless?</td>
+            <td><input type="radio" name="emotional13" value="very_often"></td>
+            <td><input type="radio" name="emotional13" value="often"></td>
+            <td><input type="radio" name="emotional13" value="sometimes"></td>
+            <td><input type="radio" name="emotional13" value="seldom"></td>
+            <td><input type="radio" name="emotional13" value="never"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>External eating items</h3>
+      <table class="grid-table">
+        <thead>
+          <tr>
+            <th>Statement</th>
+            <th>Very often</th>
+            <th>Often</th>
+            <th>Sometimes</th>
+            <th>Seldom</th>
+            <th>Never</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>If food tastes good to you, do you eat more than usual?</td>
+            <td><input type="radio" name="external1" value="very_often"></td>
+            <td><input type="radio" name="external1" value="often"></td>
+            <td><input type="radio" name="external1" value="sometimes"></td>
+            <td><input type="radio" name="external1" value="seldom"></td>
+            <td><input type="radio" name="external1" value="never"></td>
+          </tr>
+          <tr>
+            <td>If food smells and looks good, do you eat more than usual?</td>
+            <td><input type="radio" name="external2" value="very_often"></td>
+            <td><input type="radio" name="external2" value="often"></td>
+            <td><input type="radio" name="external2" value="sometimes"></td>
+            <td><input type="radio" name="external2" value="seldom"></td>
+            <td><input type="radio" name="external2" value="never"></td>
+          </tr>
+          <tr>
+            <td>If you see or smell something delicious, do you have a desire to eat it?</td>
+            <td><input type="radio" name="external3" value="very_often"></td>
+            <td><input type="radio" name="external3" value="often"></td>
+            <td><input type="radio" name="external3" value="sometimes"></td>
+            <td><input type="radio" name="external3" value="seldom"></td>
+            <td><input type="radio" name="external3" value="never"></td>
+          </tr>
+          <tr>
+            <td>If you have something delicious to eat, do you eat it straight away?</td>
+            <td><input type="radio" name="external4" value="very_often"></td>
+            <td><input type="radio" name="external4" value="often"></td>
+            <td><input type="radio" name="external4" value="sometimes"></td>
+            <td><input type="radio" name="external4" value="seldom"></td>
+            <td><input type="radio" name="external4" value="never"></td>
+          </tr>
+          <tr>
+            <td>If you walk past the baker do you have the desire to buy something delicious?</td>
+            <td><input type="radio" name="external5" value="very_often"></td>
+            <td><input type="radio" name="external5" value="often"></td>
+            <td><input type="radio" name="external5" value="sometimes"></td>
+            <td><input type="radio" name="external5" value="seldom"></td>
+            <td><input type="radio" name="external5" value="never"></td>
+          </tr>
+          <tr>
+            <td>If you walk past a snackbar or a café, do you have the desire to buy something delicious?</td>
+            <td><input type="radio" name="external6" value="very_often"></td>
+            <td><input type="radio" name="external6" value="often"></td>
+            <td><input type="radio" name="external6" value="sometimes"></td>
+            <td><input type="radio" name="external6" value="seldom"></td>
+            <td><input type="radio" name="external6" value="never"></td>
+          </tr>
+          <tr>
+            <td>If you see others eating, do you also have the desire to eat?</td>
+            <td><input type="radio" name="external7" value="very_often"></td>
+            <td><input type="radio" name="external7" value="often"></td>
+            <td><input type="radio" name="external7" value="sometimes"></td>
+            <td><input type="radio" name="external7" value="seldom"></td>
+            <td><input type="radio" name="external7" value="never"></td>
+          </tr>
+          <tr>
+            <td>Can you resist eating delicious foods?</td>
+            <td><input type="radio" name="external8" value="very_often"></td>
+            <td><input type="radio" name="external8" value="often"></td>
+            <td><input type="radio" name="external8" value="sometimes"></td>
+            <td><input type="radio" name="external8" value="seldom"></td>
+            <td><input type="radio" name="external8" value="never"></td>
+          </tr>
+          <tr>
+            <td>Do you eat more than usual when you see others eating?</td>
+            <td><input type="radio" name="external9" value="very_often"></td>
+            <td><input type="radio" name="external9" value="often"></td>
+            <td><input type="radio" name="external9" value="sometimes"></td>
+            <td><input type="radio" name="external9" value="seldom"></td>
+            <td><input type="radio" name="external9" value="never"></td>
+          </tr>
+          <tr>
+            <td>When preparing a meal are you inclined to taste something?</td>
+            <td><input type="radio" name="external10" value="very_often"></td>
+            <td><input type="radio" name="external10" value="often"></td>
+            <td><input type="radio" name="external10" value="sometimes"></td>
+            <td><input type="radio" name="external10" value="seldom"></td>
+            <td><input type="radio" name="external10" value="never"></td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <!-- Submission -->
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
